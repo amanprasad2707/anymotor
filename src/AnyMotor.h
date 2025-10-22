@@ -36,7 +36,7 @@ private:
   uint8_t _speed;       // Current motor speed (0-255)
   uint8_t _min_speed;   // Minimum allowed speed (default: 0)
   uint8_t _max_speed;   // Maximum allowed speed (default: 255)
-  uint8_t _deadband;    // Minimum speed where motor actually moves (compensates for startup threshold)
+  uint8_t _deadband;    // minimum PWM speed required to overcome motor startup friction
 
   // ===== STATE TRACKING =====
   MotorDirection _currentDirection;  // Current direction (forward/backward/stopped)
