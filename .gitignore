@@ -1,0 +1,108 @@
+# ===========================
+# FlexiDrive Project .gitignore
+# Supports PlatformIO, Arduino, and C/C++
+# ===========================
+
+# --- Build / Binary files ---
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.d
+*.a
+*.so
+*.dll
+*.exe
+*.out
+
+# --- PlatformIO specific ---
+.pio/
+.piolibdeps/
+.vscode/.browse.c_cpp.db
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/ipch/
+
+# --- Arduino specific ---
+*.bak
+*.cpp.d
+*.h.d
+*.cpp.o
+*.h.o
+*.d
+*.orig
+*.log
+
+# --- STM32CubeIDE / HAL projects ---
+/Debug/
+/Release/
+/build/
+*.launch
+*.ioc
+
+# --- Backup / Temp / Misc ---
+*.swp
+*.swo
+*.tmp
+*.temp
+*.old
+*.bak
+*.DS_Store
+Thumbs.db
+~$*
+
+# --- Python (if you use helper scripts) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+.env
+.venv
+venv/
+
+# --- Documentation / Generated Assets ---
+/docs/_build/
+/docs/html/
+/docs/*.pdf
+
+# --- Logs and user data ---
+*.log
+*.cache
+*.json.backup
+*.cfg
+*.ini
+
+# --- OS specific ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Node.js (if you build dashboards/tools) ---
+node_modules/
+dist/
+build/
+npm-debug.log*
+
+# --- Temporary project files ---
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.swo
+
+
+
+# ===========================
+# END OF FILE
+# ===========================
