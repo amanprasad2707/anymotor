@@ -102,8 +102,6 @@ void Motor::decelerate(uint8_t decrement) {
 }
 
 
-
-
 void Motor::toggle() {
   if (_currentDirection == MOTOR_FORWARD) {
     backward();
@@ -119,6 +117,38 @@ void Motor::setInverted(bool inverted) {
     _applyMotion();
   }
 }
+
+
+// Forward: both motors forward
+void moveForward(Motor &left, Motor &right, uint8_t speed = 255) {
+  left.forward(speed);
+  right.forward(speed);
+}
+
+// Backward: both motors backward
+void moveBackward(Motor &left, Motor &right, uint8_t speed = 255) {
+  left.backward(speed);
+  right.backward(speed);
+}
+
+// Turn left: left motor backward, right motor forward
+void turnLeft(Motor &left, Motor &right, uint8_t speed = 255) {
+  left.backward(speed);
+  right.forward(speed);
+}
+
+// Turn right: left motor forward, right motor backward
+void turnRight(Motor &left, Motor &right, uint8_t speed = 255) {
+  left.forward(speed);
+  right.backward(speed);
+}
+
+// Stop: both motors stop
+void stopMotors(Motor &left, Motor &right) {
+  left.stop();
+  right.stop();
+}
+
 
 
 

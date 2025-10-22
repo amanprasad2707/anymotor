@@ -138,4 +138,48 @@ public:
   MotorDirection getDirection() const;
 };
 
+
+/**
+ * @brief Move both motors forward
+ * @param left Reference to the left motor
+ * @param right Reference to the right motor
+ * @param speed Motor speed (0-255), default = 255 (max speed)
+ */
+void moveForward(Motor &left, Motor &right, uint8_t speed = 255);
+
+/**
+ * @brief Move both motors backward
+ * @param left Reference to the left motor
+ * @param right Reference to the right motor
+ * @param speed Motor speed (0-255), default = 255 (max speed)
+ */
+void moveBackward(Motor &left, Motor &right, uint8_t speed = 255);
+
+/**
+ * @brief Turn the car left
+ * Left motor moves backward, right motor moves forward
+ * @param left Reference to the left motor
+ * @param right Reference to the right motor
+ * @param speed Motor speed (0-255), default = 255 (max speed)
+ */
+void turnLeft(Motor &left, Motor &right, uint8_t speed = 255);
+
+/**
+ * @brief Turn the car right
+ * Left motor moves forward, right motor moves backward
+ * @param left Reference to the left motor
+ * @param right Reference to the right motor
+ * @param speed Motor speed (0-255), default = 255 (max speed)
+ */
+void turnRight(Motor &left, Motor &right, uint8_t speed = 255);
+
+/**
+ * @brief Stop both motors
+ * @param left Reference to the left motor
+ * @param right Reference to the right motor
+ */
+void stopMotors(Motor &left, Motor &right);
+
+
+
 #endif // ANYMOTOR_H
