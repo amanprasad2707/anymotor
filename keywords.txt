@@ -1,0 +1,43 @@
+#######################################
+# Syntax Coloring Map for AnyMotor
+#######################################
+
+#######################################
+# Datatypes (CLASS)
+#######################################
+Motor	KEYWORD1
+
+#######################################
+# Methods and Functions
+#######################################
+init	KEYWORD2
+forward	KEYWORD2
+backward	KEYWORD2
+stop	KEYWORD2
+brake	KEYWORD2
+toggle	KEYWORD2
+setSpeed	KEYWORD2
+setSpeedRange	KEYWORD2
+setDeadBand	KEYWORD2
+accelerate	KEYWORD2
+decelerate	KEYWORD2
+setInverted	KEYWORD2
+getSpeed	KEYWORD2
+getMinSpeed	KEYWORD2
+getMaxSpeed	KEYWORD2
+getDeadBand	KEYWORD2
+isRunning	KEYWORD2
+isInverted	KEYWORD2
+getDirection	KEYWORD2
+moveForward	KEYWORD2
+moveBackward	KEYWORD2
+turnLeft	KEYWORD2
+turnRight	KEYWORD2
+stopMotors	KEYWORD2
+
+#######################################
+# Constants
+#######################################
+MOTOR_FORWARD	LITERAL1
+MOTOR_BACKWARD	LITERAL1
+MOTOR_STOPPED	LITERAL1
