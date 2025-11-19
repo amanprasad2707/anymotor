@@ -4,6 +4,21 @@
 #include <ESPAsyncWebServer.h>
 #include "AnyMotor.h"
 
+
+/******************************************************
+    NOTE — ESP32 ONLY
+
+  This code has been tested and verified on ESP32 boards.
+  It will NOT work on ESP8266, AVR (Arduino Uno/Nano), 
+  STM32, ESP32-CAM, or any other architecture without 
+  modification.
+
+  Make sure your board selection in the Arduino IDE is:
+      Tools → Board → ESP32 Dev Module
+******************************************************/
+
+
+
 // -------------------- MOTOR SETUP --------------------
 #define L_IN1 12
 #define L_IN2 13
